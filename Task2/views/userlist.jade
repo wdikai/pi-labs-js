@@ -1,0 +1,30 @@
+html
+	head
+		title User list
+	body
+		include includes/header  
+		h1 Welcom
+		if isAdmin
+			a(href='/user/add') Add
+		table
+			tr(class='header')
+				td 
+					| Full name
+				td 
+					| E-mail
+				td 
+			for user in users
+				tr
+					td 
+						| #{user.name}
+					td 
+						| #{user.mail}
+					td 
+						if user.isEdit
+							a(href='/user/#{user.login}/edit') edit 
+						if user.isDelete
+							a(href='/user/#{user.login}/drop') delete
+			else
+				tr
+					td 
+						| Error

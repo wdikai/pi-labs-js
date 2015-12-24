@@ -1,0 +1,94 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+p {
+  text-align: center;
+  margin: 0px;
+  padding: 3px;
+  
+  background: black;
+  color: #00B7FF;
+}
+
+textarea#massage {
+  width: 433px;
+  height: 70px;
+  padding-right: 10px;
+}
+
+button#submit {
+  width: 450px;
+  color: #00B7FF;
+}
+
+.content {
+  margin-left: calc(50% - 225px);
+  margin-right: calc(50% - 225px);
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+#posts {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  height: calc(100vh - 150px);
+  width: 463px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.post {
+  border: 1px solid #000;
+  border-radius: 20px;
+  
+  padding: 2px;
+  padding-left: 15px;
+  padding-right: 30px;
+  margin: 1px 4px 0px 2px;
+  
+  background-color: #c0c0c0;
+  
+  height: auto;
+  width: auto;
+  max-width: 200px;
+  float: left;
+  clear: both;
+}
+
+.not-me{
+  
+  margin: 5, 5, 10, 5;
+  position: relative;
+  left: -200px;
+  
+  -webkit-transition: left 0.2s linear 0s;
+     -moz-transition: left 0.2s linear 0s;
+       -o-transition: left 0.2s linear 0s;
+          transition: left 0.2s linear 0s;
+}
+
+.me{
+  float: right;
+  
+  margin: 5, 5, 10, 5;
+  position: relative;
+  right: -200px;
+          
+  -webkit-transition: right 0.2s linear 0s;
+     -moz-transition: right 0.2s linear 0s;
+       -o-transition: right 0.2s linear 0s;
+          transition: right 0.2s linear 0s;
+}
+
+.animate-not-me{
+  left: 0px;
+}
+
+.animate-me{
+  right: 0px;
+}
+
+.post .name {
+  color: #f10b00;
+}

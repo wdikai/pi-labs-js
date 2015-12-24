@@ -1,0 +1,24 @@
+html
+	head
+		title!=title
+	body
+		form(method='post', action='/result')
+			div(style="display:inline")
+				p 
+					input(name='firstNumber', id='firstNumber', type='number')
+				p 
+					input(name='seccontNumber', id='firstNumber', type='number')
+				p 
+					input(name='operation', value='sum', type='radio') 
+					|+
+				p 
+					input(name='operation', value='sub', type='radio') 
+					|-
+				p 
+					input(name='operation', value='mul', type='radio') 
+					|*
+				p 
+					input(name='operation', value='div', type='radio') 
+					|/
+				p 
+				input(type='submit', value='=')

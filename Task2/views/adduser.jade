@@ -1,0 +1,25 @@
+html
+	head
+		title Add user
+	body
+		include includes/header   
+		form(method='post', action='/user/add')
+			label(for='login') Login:
+			input(name='login', id='login', type='text')
+			br
+			label(for='password') Paswword:
+			input(name='password', id='password', type='password')
+			br
+			label(for='fullName') Full name:
+			input(name='fullName', id='fullName', type='text')
+			br
+			label(for='mail') E-mail:
+			input(name='mail', id='mail', type='mail')
+			br
+			input(name='role', id='admin', value='admin', type='radio') 
+			label(for='admin') Admin
+			input(name='role', id='user', value='user', type='radio') 
+			label(for='user') User
+			br
+			br
+			input(type='submit', value='Add user')

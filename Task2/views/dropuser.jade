@@ -1,0 +1,11 @@
+html
+	head
+		title Confirm to drop 
+	body
+		include includes/header  
+		h1 Do yuo want delete acount with login: #{login}.
+		br
+		form(method='post', action='/user/#{login}/drop')
+			input(type='submit', value='Yes') 
+		form(method='get', action='/user')
+			input(type='submit', value='No') 

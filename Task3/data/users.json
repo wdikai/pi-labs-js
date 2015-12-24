@@ -1,0 +1,14 @@
+[
+	{
+		"name"		: "admin",
+		"password"	: "qwerty"
+	},
+	{
+		"name"		: "user",
+		"password"	: "asdfgh"
+	},
+	{
+		"name"		: "qaz",
+		"password"	: "zxcvbn"
+	}
+]

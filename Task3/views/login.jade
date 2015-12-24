@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	form(method='post', action='/auth/login')
+		input(name='login', type='text', placeholder='login')
+		br
+		input(name='password', type='password', placeholder='password')
+		br
+		input(type='submit', value='login')

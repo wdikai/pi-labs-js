@@ -1,0 +1,16 @@
+html
+	head
+		title Edit user
+	body
+		include includes/header  
+		form(method='post', action='/user/#{login}/edit')
+			label(for='fullName') Full name:
+			input(name='fullName', id='fullName', value='#{fullName}', type='text')
+			br
+			label(for='mail') E-mail:
+			input(name='mail', id='mail', value='#{mail}', type='mail')
+			br
+			label(for='password') Pasword:
+			input(name='password', id='password', value='#{password}', type='text')
+			br
+			input(type='submit', value='Save') 

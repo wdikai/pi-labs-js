@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  div.content
+    p hello 
+      span(id= 'name') #{name}
+    div#posts
+    div#form
+      textarea(id= 'massage', placeholder= 'Введите текст сообщения!')
+      br
+      button(id= 'submit') Отправить
+  script(src='/js/jquery-2.1.4.min.js')
+  script(src="https://cdn.socket.io/socket.io-1.2.1.js")
+  script. window.username = '#{name}';
+  script(src='/js/script.js')

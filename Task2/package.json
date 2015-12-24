@@ -1,0 +1,19 @@
+{
+  "name": "task2",
+  "version": "0.0.2",
+  "description": "lab number two.",
+  "main": "./bin/index.js",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "express-session": "^1.12.1",
+    "jade": "^1.11.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./bin/index.js"
+  },
+  "author": "kostya_grigorev",
+  "license": "ISC"
+}
